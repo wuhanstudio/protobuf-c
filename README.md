@@ -18,8 +18,8 @@ Google 的 prototol buffer 一种轻便高效的数据存储格式，可以很�
 
 ```
 RT-Thread online packages
-  miscellaneous packages  --->
-      [*] libann: a light-weight ANN library, capable of training, saving and loading  models.
+  IoT - internet of things  --->
+      [*] protobuf-c: a C implementation of the Google Protocol Buffers data serialization format on RT-Thread
 ```
 
 然后让 RT-Thread 的包管理器自动更新，或者使用 `pkgs --update` 命令更新包到 BSP 中。
@@ -30,7 +30,7 @@ RT-Thread online packages
 
 ## 5、感谢
 
-protobuf-c: [https://github.com/protobuf-c/protobuf-c](https://github.com/protobuf-c/protobuf-c)
+- protobuf-c: [https://github.com/protobuf-c/protobuf-c](https://github.com/protobuf-c/protobuf-c)
 
 ## 6、联系方式
 
