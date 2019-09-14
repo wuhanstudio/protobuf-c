@@ -5,9 +5,9 @@
 
 #include "amessage.pb-c.h"
 
-static void protobuf_encode_to_file(int argc,char *argv[])
+static void protobuf_encode_to_file(int argc, char *argv[])
 {
-    void *buffer;                     // Buffer to store serialized data
+    void *buffer;                      // Buffer to store serialized data
     unsigned msg_len;                  // Length of serialized data
 
     if (argc != 3)
@@ -19,7 +19,7 @@ static void protobuf_encode_to_file(int argc,char *argv[])
     // Encode message to buffer
     {
         rt_kprintf("---- Encoding ---\n");
-        AMessage encode_msg = AMESSAGE__INIT; // AMessage
+        AMessage encode_msg = AMESSAGE__INIT;   // AMessage
 
         encode_msg.has_a  = 1;
         encode_msg.a      = atoi(argv[1]);
@@ -31,7 +31,6 @@ static void protobuf_encode_to_file(int argc,char *argv[])
 
         rt_kprintf("Encoding %d serialized bytes\n", msg_len);
         amessage__pack(&encode_msg, buffer);
-
 
         rt_kprintf("---- Saving ---\n");
         int fd = open("/amessage.onnx", O_WRONLY | O_CREAT | O_TRUNC);

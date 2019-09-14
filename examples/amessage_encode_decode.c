@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "amessage.pb-c.h"
 
-static void protobuf_encode_decode(int argc,char *argv[])
+static void protobuf_encode_decode(int argc, char *argv[])
 {
     void *buf;                     // Buffer to store serialized data
     unsigned msg_len;              // Length of serialized data

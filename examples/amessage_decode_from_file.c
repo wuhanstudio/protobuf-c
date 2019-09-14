@@ -5,7 +5,7 @@
 
 #include "amessage.pb-c.h"
 
-static void protobuf_decode_from_file(int argc,char *argv[])
+static void protobuf_decode_from_file(int argc, char *argv[])
 {
     rt_kprintf("---- Reading ---\n");
 
