@@ -36,4 +36,4 @@ RT-Thread online packages
 
 - 维护：Wu Han
 - 主页：http://wuhanstudio.cc
-- 邮箱：wuhanstudio@hust.edu.cn
+- 邮箱：https://github.com/wuhanstudio/protobuf-c/issues
